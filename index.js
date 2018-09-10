@@ -15,6 +15,57 @@ router.use(function(req,res,next) {
 router.get("/",function(req,res) {
   res.sendFile(viewsPath+"index.html");
 });
+router.get("/home",function(req,res) {
+  res.sendFile(viewsPath+"index.html");
+});
+router.get("/roster",function(req,res) {
+  res.sendFile(viewsPath+"index.html");
+});
+router.get("/roster-leadership",function(req,res) {
+  res.sendFile(viewsPath+"roster-leadership.html");
+});
+router.get("/roster-current-members",function(req,res) {
+  res.sendFile(viewsPath+"roster-current-members.html");
+});
+router.get("/roster-past-members",function(req,res) {
+  res.sendFile(viewsPath+"roster-past-members.html");
+});
+router.get("/roster-join-the-team",function(req,res) {
+  res.sendFile(viewsPath+"index.html");
+});
+router.get("/projects",function(req,res) {
+  res.sendFile(viewsPath+"index.html");
+});
+router.get("/projects-thirty-lbs",function(req,res) {
+  res.sendFile(viewsPath+"index.html");
+});
+router.get("/projects-twelve-lbs",function(req,res) {
+  res.sendFile(viewsPath+"index.html");
+});
+router.get("/projects-three-lbs",function(req,res) {
+  res.sendFile(viewsPath+"index.html");
+});
+router.get("/projects-drone",function(req,res) {
+  res.sendFile(viewsPath+"index.html");
+});
+router.get("/projects-camera-bot",function(req,res) {
+  res.sendFile(viewsPath+"index.html");
+});
+router.get("/fundraising",function(req,res) {
+  res.sendFile(viewsPath+"index.html");
+});
+router.get("/fundraising-sponsorships",function(req,res) {
+  res.sendFile(viewsPath+"index.html");
+});
+router.get("/fundraising-donations",function(req,res) {
+  res.sendFile(viewsPath+"index.html");
+});
+router.get("/events",function(req,res) {
+  res.sendFile(viewsPath+"index.html");
+});
+router.get("/contact",function(req,res) {
+  res.sendFile(viewsPath+"index.html");
+});
 
 //This tells express to use the routes defined above.
 app.use("/",router);
