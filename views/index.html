@@ -16,12 +16,82 @@
   <!-- Loading Bootstrap CSS File -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!-- Setting Title -->
+  <link rel="Icon" href="bengal_reauxbotics_logo_bgwhite.ico"></link>
   <title>Home - Bengal Reauxbotics</title>
 </head>
 <!-- ***** END HEAD ***** -->
 
 <!-- ***** BODY ***** -->
 <body>
+  <!-- ***** NAVBAR ***** -->
+  <nav class="navbar navbar-dark navbar-expand-sm fixed-top" style="background-color: #4a187e;">
+    <!-- Container for Navbar Insides -->
+    <div class="container-fluid">
+      <!-- Setting Navbar Brand (Logo) -->
+      <a class="navbar-brand" href="/"><img src="bengal_reauxbotics_logo.svg" style="width: 40px;" alt="Bengal Reauxbotics Logo"></a>
+      <!-- Add Title Only When Big Enough And Small Enough -->
+      <span class="navbar-text d-sm-none d-md-block">Bengal Reauxbotics at LSU</span>
+      <!-- Hamburger Button for SM Breakpoint -->
+      <button class="navbar-toggler" type="button"
+              data-toggle="collapse" data-target="#navbarTogglerDiv"
+              aria-controls="navbarTogglerDiv" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Collapse Div for Navbar -->
+      <div class="collapse navbar-collapse" id="navbarTogglerDiv">
+        <!-- Actual Navbar -->
+        <div class="navbar-nav ml-auto">
+          <!-- Item 1 -->
+          <a class="nav-item nav-link" href="/home">Home</a>
+          <!-- Item 2 (Dropdown) -->
+          <div class="dropdown">
+            <a class="nav-item nav-link dropdown-toggle"
+              data-toggle="dropdown" id="rosterDropdown"
+              aria-haspopup="true" area-expanded="false"
+              href="/roster">Roster</a>
+              <div class="dropdown-menu" aria-labelledby="rosterDropdown">
+                <a class="dropdown-item" href="/roster/leadership">Leadership</a>
+                <a class="dropdown-item" href="/roster/current-members">Current Members</a>
+                <a class="dropdown-item" href="/roster/past-members">Past Members</a>
+                <a class="dropdown-item" href="/roster/join-the-team">Join the Team</a>
+              </div>
+          </div>
+          <!-- Item 3 (Dropdown) -->
+          <div class="dropdown">
+            <a class="nav-item nav-link dropdown-toggle"
+              data-toggle="dropdown" id="projectsDropdown"
+              aria-haspopup="true" area-expanded="false"
+              href="/projects">Projects</a>
+              <!-- Dropdown Menu -->
+              <div class="dropdown-menu" aria-labelledby="projectsDropdown">
+                <a class="dropdown-item" href="/projects/thirty-lbs">30 Lbs</a>
+                <a class="dropdown-item" href="/projects/twelve-lbs">12 Lbs</a>
+                <a class="dropdown-item" href="/projects/three-lbs">3 Lbs</a>
+                <a class="dropdown-item" href="/projects/drone">Drone</a>
+                <a class="dropdown-item" href="/projects/camera-bot">Camera Bot</a>
+              </div>
+          </div>
+          <!-- Item 4 (Dropdown) -->
+          <div class="dropdown">
+            <a class="nav-item nav-link dropdown-toggle"
+              data-toggle="dropdown" id="fundraisingDropdown"
+              aria-haspopup="true" area-expanded="false"
+              href="/fundraising">Fundraising</a>
+              <!-- Dropdown Menu -->
+              <div class="dropdown-menu" aria-labelledby="fundraisingDropdown">
+                <a class="dropdown-item" href="/fundraising/sponsorships">Sponsorships</a>
+                <a class="dropdown-item" href="/fundraising/donations">Donations</a>
+              </div>
+          </div>
+          <!-- Item 5 -->
+          <a class="nav-item nav-link" href="/events">Events</a>
+          <!-- Item 6 -->
+          <a class="nav-item nav-link" href="/contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- ***** END NAVBAR ***** -->
 
   <!-- ***** Code Goes Here ***** -->
 
