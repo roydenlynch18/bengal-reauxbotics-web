@@ -31,40 +31,40 @@ router.get("/roster-past-members",function(req,res) {
   res.sendFile(viewsPath+"roster-past-members.html");
 });
 router.get("/roster-join-the-team",function(req,res) {
-  res.sendFile(viewsPath+"index.html");
+  res.sendFile(viewsPath+"roster-join-the-team.html");
 });
 router.get("/projects",function(req,res) {
   res.sendFile(viewsPath+"index.html");
 });
 router.get("/projects-thirty-lbs",function(req,res) {
-  res.sendFile(viewsPath+"index.html");
+  res.sendFile(viewsPath+"projects-thirty-lbs.html");
 });
 router.get("/projects-twelve-lbs",function(req,res) {
-  res.sendFile(viewsPath+"index.html");
+  res.sendFile(viewsPath+"projects-twelve-lbs.html");
 });
 router.get("/projects-three-lbs",function(req,res) {
-  res.sendFile(viewsPath+"index.html");
+  res.sendFile(viewsPath+"projects-three-lbs.html");
 });
 router.get("/projects-drone",function(req,res) {
-  res.sendFile(viewsPath+"index.html");
+  res.sendFile(viewsPath+"projects-drone.html");
 });
 router.get("/projects-camera-bot",function(req,res) {
-  res.sendFile(viewsPath+"index.html");
+  res.sendFile(viewsPath+"projects-camera-bot.html");
 });
 router.get("/fundraising",function(req,res) {
   res.sendFile(viewsPath+"index.html");
 });
 router.get("/fundraising-sponsorships",function(req,res) {
-  res.sendFile(viewsPath+"index.html");
+  res.sendFile(viewsPath+"fundraising-sponsorships.html");
 });
 router.get("/fundraising-donations",function(req,res) {
-  res.sendFile(viewsPath+"index.html");
+  res.sendFile(viewsPath+"fundraising-donations.html");
 });
 router.get("/events",function(req,res) {
-  res.sendFile(viewsPath+"index.html");
+  res.sendFile(viewsPath+"events.html");
 });
 router.get("/contact",function(req,res) {
-  res.sendFile(viewsPath+"index.html");
+  res.sendFile(viewsPath+"contact.html");
 });
 
 //This tells express to use the routes defined above.
