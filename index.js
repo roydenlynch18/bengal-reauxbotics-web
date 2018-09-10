@@ -16,12 +16,6 @@ router.get("/",function(req,res) {
   res.sendFile(viewsPath+"index.html");
 });
 
-//This is how I load images.
-router.get("image.jpg",function(req,res) {
-  res.sendFile("./public/image.jpg")
-});
-
-
 //This tells express to use the routes defined above.
 app.use("/",router);
 //This tells express to use the public folder to serve static files (images).
