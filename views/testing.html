@@ -17,15 +17,15 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!-- Setting Title -->
   <link rel="Icon" href="bengal_reauxbotics_logo_bgwhite.ico"></link>
-  <title>Projects - 30 lbs.</title>
+  <title>Home - Bengal Reauxbotics</title>
   <style> body { padding-top: 85px; } </style>
 </head>
 <!-- ***** END HEAD ***** -->
 
 <!-- ***** BODY ***** -->
-<body class="bg-secondary">
+<body class="bg-secondary" data-spy="scroll" data-target="#navbar-site">
   <!-- ***** NAVBAR ***** -->
-  <nav class="navbar navbar-dark navbar-expand-sm fixed-top" style="background-color: #4a187e;">
+  <nav id="navbar-site" data-offset="85" class="navbar navbar-dark navbar-expand-sm fixed-top" style="background-color: #4a187e;">
     <!-- Container for Navbar Insides -->
     <div class="container-fluid">
       <!-- Setting Navbar Brand (Logo) -->
@@ -174,60 +174,179 @@
 
 
   <!-- ***** MAIN CONTENT ***** -->
-  <div class="container rounded bg-warning text-center">
-    <h3 class="text-muted">Gold Tier Donators</h3>
-  </div>
-  <div class="container rounded bg-warning mb-4">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h3 class="text-dark">Donator 1</h3>
+  <div>
+    <!-- Main Content Container -->
+    <div class="container rounded bg-warning mb-4">
+      <h3 class="text-center text-dark"><strong>8.2 - Tooltips</strong></h3>
+      <p class="text-dark">
+        Here is a <a href="" data-toggle="tooltip" data-placement="top" title="Woah! That's cool.">tooltip</a>.
+      </p>
+      <h3 class="text-center text-dark"><strong>8.3 - Popovers</strong></h3>
+      <p class="text-dark">
+        <button type="button" class="btn btn-info"
+                data-toggle="popover"
+                data-placement="top"
+                data-trigger="hover"
+                title="Damn. This is a popover."
+                data-content="Woah, I can even put in longer text to act as the content within this popover.">
+          Display Popover
+        </button>
+      </p>
+      <h3 class="text-center text-dark"><strong>8.4 - Alerts</strong></h3>
+      <div class="alert alert-info alert-dissmisable fade show">
+        <button type="button" class="btn btn-info"
+                data-dismiss="alert"
+                aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="alert-heading">Alert! Alert! Alert!</h4>
+        <p
+        <a class="alert-link" href="#">Alert Link!</a>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-12 text-center">
-        <h3 class="text-dark">Donator 2</h3>
+      <h3 class="text-center text-dark"><strong>8.5 - Dropdowns</strong></h3>
+      <div class="dropdown">
+        <button class="btn btn-primary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Toggle Button</button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <div class="dropdown-header">Dropdown Items</div>
+          <a class="dropdown-item" href="#">Item 1</a>
+          <a class="dropdown-item" href="#">Item 2</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Item 3</a>
+          <a class="dropdown-item" href="#">Item 4</a>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-12 text-center">
-        <h3 class="text-dark">Donator 3</h3>
+      <div class="btn-group">
+        <button class="btn btn-primary" type="button">Dropdown</button>
+        <button class="btn btn-primary dropdown-toggle dropdown-toggle-split" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Dropdown Toggle</span></button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <div class="dropdown-header">Dropdown Items</div>
+          <a class="dropdown-item" href="#">Item 1</a>
+          <a class="dropdown-item" href="#">Item 2</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Item 3</a>
+          <a class="dropdown-item" href="#">Item 4</a>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-12 text-center">
-        <h3 class="text-dark">Donator 4</h3>
+      <h3 class="text-center text-dark"><strong>8.6 - Collapses/Accordions</strong></h3>
+      <button class="btn btn-primary" type="button"
+              data-toggle="collapse" data-target="#collapsecontrol"
+              aria-expanded="Link to Test Control">
+        Collapse Button
+      </button>
+      <div id="collapsecontrol" class="collapse">
+        Hi there! I think this collapse feature is pretty cool.
       </div>
-    </div>
-  </div>
-  <div class="container rounded text-center" style="background-color: #4a187e;">
-    <h3 class="text-muted">Purple Tier Donators</h3>
-  </div>
-  <div class="container rounded bg-warning">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h3 class="text-dark">Donator 1</h3>
+      <div id="cardaccordion" role="tablist" aria-multiselectable="true">
+        <div class="card">
+          <div class="card-header" role="tab" id="card1heading">
+            <h5>
+              <a href="#card1"
+                data-toggle="collapse"
+                data-parent="#cardaccordion"
+                aria-expanded="true"
+                aria-controls="card1">
+              Card 1</a>
+            </h5>
+          </div>
+          <div id="card1" class="collapse show" role="tabpanel" aria-labelledby="card1heading">
+            <div class="card-block">
+              <p>This is the block of content/text for card 1.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-12 text-center">
-        <h3 class="text-dark">Donator 2</h3>
+      <h3 class="text-center text-dark"><strong>8.7 - Modals</strong></h3>
+      <button type="button" class="btn btn-primary"
+              data-toggle="modal" data-target="#testmodal">
+        Modal Button
+      </button>
+      <div id="testmodal" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal Header</h5>
+              <button type="button" class="close"
+                      data-dismiss="modal"
+                      aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              This is a modal.
+              <p>Wow, here is some more paragraph text to explain what the hell is going on in this modal.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primaty"
+                      data-dismiss="modal">
+                Go Back
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-12 text-center">
-        <h3 class="text-dark">Donator 3</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12 text-center">
-        <h3 class="text-dark">Donator 4</h3>
-      </div>
+      <h3 class="text-center text-dark"><strong>8.8 - Scrollspy</strong></h3>
+      <p>This was kinda confusing, and I don't need for this website anyway.</p>
+      <h3 class="text-center text-dark"><strong>7.2 - Basic Form</strong></h3>
+      <h3 class="text-center text-dark"><strong>7.3 - Checkboxes/Radio Classes</strong></h3>
+      <form>
+        <fieldset class="form-group">
+          <legend>Fieldset 1</legend>
+          <div class="form-group">
+            <label class="form-control-label" for="variableone">Variable 1</label>
+            <input class="form-control" type="text" id="variableone" placeholder="Type a variable.">
+          </div>
+          <div class="form-group">
+            <label class="form-control-label" for="variabletwo">Variable 2</label>
+            <select class="form-control" id="variabletwo">
+              <option>Choose</option>
+              <option value="op1">Option1</option>
+              <option value="op2">Option2</option>
+              <option value="op3">Option3</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-control-label" for="variablethree">Variable 3</label>
+            <textarea class="form-control" id="variablethree" rows="3"></textarea>
+          </div>
+        </fieldset>
+        <fieldset class="form-group">
+          <legend>Fieldset 2</legend>
+          <div class="form-group">
+            <label class="d-block">Is this a label for the first form group of fieldset two?</label>
+            <div class="form-check form-check-inline">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="radioquestion" value="yes" checked> Yes</input>
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="radioquestion" value="no"> No</input>
+              </label>
+            </div>
+          <div class="form-group">
+            <label>Is this a label for the second form group of fieldset two?</label>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox"> Check Me.</input>
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox"> No Me!</input>
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox"> I don't really care.</input>
+              </label>
+            </div>
+        </fieldset>
     </div>
   </div>
   <!-- ***** END MAIN CONTENT ***** -->
 
   <!-- ***** FOOTER ***** style="background-color: #000000;" -->
-  <div class="container-fluid rounded text-center mt-4">
+  <div class="container-fluid rounded text-center">
     <div class="row">
       <div valign="middle" class="col-5 text-right">
         <p style="color: #4a187e;"><strong>1221 Patrick F. Taylor</strong></p>
@@ -257,6 +376,13 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script>
+    $(function() {
+      $('[data-toggle="tooltip"]').tooltip();
+      $('[data-toggle="popover"]').popover();
+    });
+  </script>
 
 </body>
 <!-- ***** END BODY ***** -->

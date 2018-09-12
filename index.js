@@ -66,6 +66,9 @@ router.get("/events",function(req,res) {
 router.get("/contact",function(req,res) {
   res.sendFile(viewsPath+"contact.html");
 });
+router.get("/testing",function(req,res) {
+  res.sendFile(viewsPath+"testing.html");
+});
 
 //This tells express to use the routes defined above.
 app.use("/",router);
