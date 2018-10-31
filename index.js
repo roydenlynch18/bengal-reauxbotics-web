@@ -69,7 +69,6 @@ router.get("/contact",function(req,res) {
 router.get("/testing",function(req,res) {
   res.sendFile(viewsPath+"testing.html");
 });
-
 //This tells express to use the routes defined above.
 app.use("/",router);
 //This tells express to use the public folder to serve static files (images).
@@ -79,6 +78,6 @@ app.use("*",function(req,rest) {
   res.sendFile(viewsPath+"404.html");
 });
 //Run at localhost:3000
-app.listen(3000,function() {
+app.listen(8081,function() {
   console.log("Live at Port 3000...");
 });
